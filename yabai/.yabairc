@@ -1,0 +1,10 @@
+yabai -m config layout bsp
+yabai -m config window_gap 4
+yabai -m config top_padding 4
+yabai -m config bottom_padding 4
+yabai -m config left_padding 4
+yabai -m config right_padding 4
+
+# ── Display hotplug: rebalance spaces + restart skhd IPC ──
+yabai -m signal --add event=display_added action="osascript -e 'delay 1' && yabai -m space --balance 2>/dev/null && launchctl kickstart -k gui/$UID/homebrew.mxcl.skhd"
+yabai -m signal --add event=display_removed action="osascript -e 'delay 1' && yabai -m space --balance 2>/dev/null && launchctl kickstart -k gui/$UID/homebrew.mxcl.skhd"
