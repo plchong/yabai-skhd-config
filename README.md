@@ -24,6 +24,8 @@ skhd --start-service
 |----------|------|--------|
 | **Focus** | `Cmd+arrows` | Move focus between windows |
 | **Swap** | `Shift+Cmd+arrows` | Swap focused window in direction |
+| **Warp** | `Ctrl+Shift+Cmd+arrows` | Reinsert window in BSP tree (not swap) |
+| **Resize** | `Ctrl+Cmd+arrows` | Resize active window |
 | **Resize** | `Ctrl+Cmd+arrows` | Resize active window |
 | **Recent** | `Alt+Tab` | Focus previous window |
 | **Spaces** | `Alt+1..9` | Switch to space N |
