@@ -10,6 +10,12 @@ shift + cmd - down : yabai -m window --swap south
 shift + cmd - up : yabai -m window --swap north
 shift + cmd - right : yabai -m window --swap east
 
+# ── Warp Window (reinsert in direction, not swap) ──
+ctrl + shift + cmd - left : yabai -m window --warp west
+ctrl + shift + cmd - down : yabai -m window --warp south
+ctrl + shift + cmd - up : yabai -m window --warp north
+ctrl + shift + cmd - right : yabai -m window --warp east
+
 # ── Resize Window ──
 ctrl + cmd - left : yabai -m window --resize right:-30:0
 ctrl + cmd - right : yabai -m window --resize right:30:0
